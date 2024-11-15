@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="/mar/manifest.json">
+    <meta http-equiv="refresh" content="10;url=https://rgmwb.gov.in">
     <title>Marreg</title>
+    <style>
+                
+    </style>
 </head>
 <body>
-    <script>
-        // Register service worker
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/service-worker.js').then((registration) => {
-                console.log('Service Worker registered with scope:', registration.scope);
-            }).catch((error) => {
-                console.log('Service Worker registration failed:', error);
-            });
-        }
-
-        // Redirect after 10 seconds
-        setTimeout(() => {
-            window.open('https://rgmwb.gov.in', '_blank', 'noopener,noreferrer');
-        }, 10000);
-    </script>
+    
+    <img src="loading.gif" alt="Loading..." style="width: 300px; height: 300px;">
+  <script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js').then((registration) => {
+            console.log('Service Worker registered with scope:', registration.scope);
+        }).catch((error) => {
+            console.log('Service Worker registration failed:', error);
+        });
+    }
+</script>
 </body>
 </html>
